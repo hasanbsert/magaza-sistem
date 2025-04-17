@@ -1,0 +1,42 @@
+<!-- index.html içeriği -->
+<header>
+  <h1>Mağazam</h1>
+  <nav>
+    <a href="#">Anasayfa</a>
+    <a href="#">Ürünler</a>
+    <a href="#">Hakkımızda</a>
+    <a href="#">İletişim</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Hoşgeldiniz!</h2>
+  <p>En yeni ürünlerimizi keşfedin.</p>
+  <a href="#" class="btn-primary">Alışverişe Başla</a>
+</section>
+
+<section class="featured-products">
+  <h3>Öne Çıkan Ürünler</h3>
+  <div class="products-grid">
+    <div class="product-card">
+      <img src="https://via.placeholder.com/200" alt="Ürün 1">
+      <h4>Ürün 1</h4>
+      <p class="price">₺199,00</p>
+      <button class="btn-secondary">Sepete Ekle</button>
+    </div>
+    <!-- Diğer ürün kartlarını buraya ekle -->
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Mağazam. Tüm hakları saklıdır.</p>
+</footer>
+
+<script>
+  document.querySelectorAll('.btn-secondary').forEach(btn =>
+    btn.addEventListener('click', e => {
+      e.preventDefault();
+      alert('Ürün sepete eklendi!');
+    })
+  );
+</script>
